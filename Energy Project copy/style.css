@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'sufrimeda';
+    src: url(fontes/sufrimeda.ttf);
+}
+@font-face{
+    font-family: 'philosopher-regular';
+    src: url(fontes/philosopher/Philosopher-Regular.ttf);
+}
+@font-face {
+    font-family: 'CoinageCapsKrugerGray';
+    src: url(fontes/CoinageCapsKrugerGray.ttf);
+}
+body{
+    background: url(imagens/darkgreybackgroundenergyproject.jpg) no-repeat center center fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(imagens/darkgreybackgroundenergyproject.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+div.container{
+    position: absolute;
+    background: transparent;
+    border: 2px solid #fff;
+    width: 100vh;
+    height: 60vh;
+    top: 20%;
+    left: 25%;
+    backdrop-filter: blur(8px);
+}
+h2.subtitle{
+    text-align: center;
+}
+div.mensage{
+    position: absolute;
+    color: #fff;
+    text-align: justify;
+    align-items: center;
+    margin-left: 270px;
+    margin-right: 50px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'philosopher-regular', sans-serif;
+}
+div.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    opacity: 0.5;
+    z-index: -1;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+}
+div.container > div.content {
+    position: relative;
+    z-index: 1;
+}
+div.content{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    top: 30px;
+}
+.card-imagem{
+    width: 40vh;
+    height: 40vh;
+    position: relative;
+    top: -40px;
+    align-items: center;
+    filter: invert();
+}
+div.box{
+    position: absolute;
+    border: 2px solid grey;
+    width: 47vh;
+    height: 52vh;
+    top: 25px;
+    left: -90px;
+    background: linear-gradient(to bottom, #000000, #141414);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+div.box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 0;
+    backdrop-filter: blur(10px);
+}
+div.letter{
+    position: absolute;
+    top: 35px;
+    left: 20px;
+}
+div.contact-whatsapp{
+    position: absolute;
+    top: 233px;
+    left: 2px;
+    width: 15vh;
+    height: 15vh;
+    background: linear-gradient(to bottom, #000000, #141414);
+    border: #fff 1px solid;
+}
+div.contact-instagram{
+    position: absolute;
+    top: 233px;
+    left: 102px;
+    width: 15vh;
+    height: 15vh;
+    background: linear-gradient(to bottom, #000000, #141414);
+    border: #fff 1px solid;
+}
+div.contact-email{
+    position: absolute;
+    top: 233px;
+    left: 202px;
+    width: 15vh;
+    height: 15vh;
+    background: linear-gradient(to bottom, #000000, #141414);
+    border: #fff 1px solid;
+}
+.img-whatsapp{
+    position: absolute;
+    width: 7vh;
+    height: 7vh;
+    filter: invert();
+    right: 25px;
+    top: 10px;
+}
+.img-instagram{
+    position: absolute;
+    width: 7vh;
+    height: 7vh;
+    filter: invert();
+    right: 25px;
+    top: 10px;
+}
+.img-gmail{
+    position: absolute;
+    width: 7vh;
+    height: 7vh;
+    filter: invert();
+    right: 25px;
+    top: 10px;
+}
+.button-whatsapp{
+    position: absolute;
+    top: 67px;
+    right: 3px;
+    height: 4vh;
+    background: transparent;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    width: 14vh;
+    cursor: pointer;
+    font-family: 'philosopher-regular',sans-serif;
+}
+.button-whatsapp:hover{
+    background-color: #92989C;
+    color: #000000;
+}
+.button-instagram{
+    position: absolute;
+    top: 67px;
+    right: 3px;
+    background: transparent;
+    color: #fff;
+    height: 4vh;
+    width: 14vh;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    font-family: 'philosopher-regular', sans-serif;
+}
+.button-instagram:hover{
+    background-color: #92989C;
+    color: #000000; 
+}
+.button-gmail{
+    position: absolute;
+    top: 67px;
+    right: 3px;
+    background: transparent;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    height: 4vh;
+    width: 14vh;
+    cursor: pointer;
+    font-family: 'philosopher-regular', sans-serif;
+}
+.button-gmail:hover{
+    background-color: #92989C;
+    color: #000000;
+}
+div.buttons{
+    position: absolute;
+    top: 340px;
+    left: 340px;
+    
+}
+button.readmore{
+    width: 15vh;
+    height: 5vh;
+    margin-right: 25px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px 7px 20px 7px;font-family: 'philosopher-regular', sans-serif;
+    font-size: 16px;
+}
+button.readmore:hover{
+    background-color: #92989C;
+    color: #000000;
+}
+button.buy{
+    width: 15vh;
+    height: 5vh;
+    animation: vibrar 1.3s ease-in-out infinite both;
+    cursor: pointer;
+    border-radius: 20px 7px 20px 7px;
+    background: transparent;
+    color: #fff;
+    font-family: 'CoinageCapsKrugerGray', sans-serif;
+    font-size: 16px;
+}
+button.buy:hover{
+    background-color: #92989C;
+    color: #000000;
+}
+h2.subtitle{
+    letter-spacing: 1px;
+    font-family: 'philosopher-regular', sans-serif;
+}
+h1.title{
+    letter-spacing: 1px;
+    font-family: 'philosopher-regular', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+@keyframes vibrar{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@media (max-width: 999px){
+    div.box{
+        width: 49vh;
+        height: 54vh;
+        left: -20px;
+        border: none;
+        z-index: -1;
+        background: none;
+    }
+    div.container{
+        width: 50vh;
+        font-size: 10px;
+        backdrop-filter: none;
+    }
+    h2.subtitle{
+        position: relative;
+        left: -230px;
+    }
+    p{
+        font-size: 12px;
+        width: 35vh;
+        left: -230px;
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    h1.title{
+        display: none;
+    }
+    button.readmore{
+        position: relative;
+        left: -290px;
+        top: -15px;
+    }
+    button.buy{
+        position: relative;
+        left: -190px;
+        top: -45px;
+        font-size: 14px;
+    }
+    div.contact-whatsapp{
+        left: -90px;
+        top: 245px;
+    }
+    div.contact-instagram{
+        left: -90px;
+        top: 150px;
+    }
+    div.contact-email{
+        left: -90px;
+        top: 55px;
+    }
+    .card-imagem{
+        left: -180px;
+        top: -125px;
+    }
+}
